@@ -4,3 +4,8 @@
     - https://nodejs.org/ja/download/ よりダウンロード（今回は「Windows Binary (.zip)」をダウンロード）
     - 圧縮ファイルを解凍
     - 解凍フォルダを環境変数のPATHに追加
+- Angular CLIのインストール
+    - ターミナルで「npm install -g @angular/cli」と入力
+
+## サーバ起動方法
+- ng serve --open
