@@ -9,3 +9,6 @@
 
 ## サーバ起動方法
 - ng serve --open
+
+## コンポーネント追加
+- ng generate component [コンポーネント名]
