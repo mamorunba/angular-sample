@@ -12,3 +12,4 @@
 
 ## コンポーネント追加
 - ng generate component [コンポーネント名]
+
