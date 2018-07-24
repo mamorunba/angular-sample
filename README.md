@@ -13,3 +13,5 @@
 ## コンポーネント追加
 - ng generate component [コンポーネント名]
 
+## AppRoutingModule追加
+- ng generate module app-routing --flat --module=app
