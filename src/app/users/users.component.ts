@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { User } from '../user';
 import { USERS } from '../mock-users';
 
+import { StorageService } from '../storage.service';
+import { MydataService } from '../mydata.service';
+
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
@@ -16,12 +19,15 @@ export class UsersComponent implements OnInit {
   users = USERS;
   selectedUser: User;
 
-  constructor() { }
+  constructor(private storageService: StorageService, private mydataService: MydataService) { }
 
   ngOnInit() {
   }
 
   onSelect(user: User): void {
     this.selectedUser = user;
+//    this.storageService.saveOperationHistory(this);
+
+    this.mydataService.readData();
   }
 }
